@@ -1,0 +1,10 @@
+$('body').html("<h1><%= escape_javascript(@post.title) %></h1>").append("<%= escape_javascript(@post.text) %><h2>Comments</h2><%= render @post.comments %><h2>Add a comment:</h2><%= escape_javascript(render 'comments/form') %>"); 
+
+
+
+
+/*<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
+<%= link_to 'Back', :action => :index %>
+| <%= link_to 'Edit', :action => :edit, :id => @post.id %>*/
